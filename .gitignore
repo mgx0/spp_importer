@@ -1,0 +1,4 @@
+config.json
+.venv
+ARCHITECTURE.MD
+__pycache__

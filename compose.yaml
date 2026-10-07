@@ -1,0 +1,14 @@
+services:
+  spp-collector:
+    build: .
+    container_name: spp-collector
+    restart: unless-stopped
+    environment:
+      TZ: Europe/Bratislava
+    volumes:
+      - type: bind
+        source: ./config.json
+        target: /app/config.json
+        read_only: true
+        bind:
+          create_host_path: false

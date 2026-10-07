@@ -1,0 +1,20 @@
+{
+  "USER_EMAIL": "your-spp-email@example.com",
+  "USER_PASSWORD": "replace-with-your-spp-password",
+  "TARGET_EIC": "YOUR_EIC",
+  "INFLUX_CONFIG": {
+    "host": "192.168.1.10",
+    "port": 8086,
+    "db": "spp",
+    "measurement": "spp_consumption",
+    "username": "influx-user",
+    "password": "replace-with-your-influx-password"
+  },
+  "DEBUG_OUTPUT": true,
+  "DAYS_BACK": 5,
+  "END_DAYS_AGO": 1,
+  "SCHEDULE_TIMES": [
+    "02:00",
+    "14:00"
+  ]
+}
