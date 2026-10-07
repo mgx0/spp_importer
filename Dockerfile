@@ -5,7 +5,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     TZ=Europe/Bratislava
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends tzdata \
+    && apt-get install -y --no-install-recommends openssl tzdata \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
